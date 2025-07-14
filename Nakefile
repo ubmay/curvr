@@ -1,0 +1,8 @@
+#!/bin/bash
+
+CPPFLAGS[clang]+=" -g"
+CFLAGS[clang]+=" -g"
+LINKFLAGS[clang]+=" -luser32 -lole32 -lshell32 -ld3d11 -ld3dcompiler -g"
+
+CPPFLAGS[cl]+=" /EHsc"
+LINKFLAGS[cl]+=" user32.lib ole32.lib shell32.lib d3d11.lib d3dcompiler.lib"
